@@ -204,8 +204,8 @@ figure.effect-bubba {	background: #9e5406; }
 
 figure.effect-bubba img {
 	opacity: 1;
-	-webkit-transition: opacity 0.35s;
-	transition: opacity 0.35s;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;
 }
 
 figure.effect-bubba:hover img {
@@ -221,8 +221,8 @@ figure.effect-bubba figcaption::after {
 	left: 15px;
 	content: '';
 	opacity: 0;
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+	transition: opacity 0.5s, transform 0.5s;
 }
 
 figure.effect-bubba figcaption::before {
@@ -241,8 +241,8 @@ figure.effect-bubba figcaption::after {
 
 figure.effect-bubba h2 {
 	font-size: 1.5rem;	
-	-webkit-transition: -webkit-transform 0.35s;
-	transition: transform 0.35s;
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
 	-webkit-transform: translate3d(0,-5px,0);
 	transform: translate3d(0,-5px,0);
 	opacity: 0;
@@ -252,8 +252,8 @@ figure.effect-bubba p {
 	width: 100%;
 	padding: 10px;
 	opacity: 0;
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+	transition: opacity 0.5s, transform 0.5s;
 	-webkit-transform: translate3d(0,20px,0);
 	transform: translate3d(0,20px,0);
 }
@@ -283,7 +283,11 @@ figure.effect-bubba:hover p {
 	margin-top: 15px;
 	margin-bottom: 15px;
 	max-width: 270px;
+	transition: transform .5s;
 }
+.tm-gallery-item:hover {
+	transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
 
 .tm-content-2 {
 	padding-left: 45px;
