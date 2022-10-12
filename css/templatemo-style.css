@@ -282,6 +282,7 @@ figure.effect-bubba:hover p {
 .tm-gallery-item {
 	margin-top: 15px;
 	margin-bottom: 15px;
+	padding-bottom: 30px;
 	max-width: 270px;
 	transition: transform .5s;
 }
